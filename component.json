@@ -1,0 +1,13 @@
+{
+  "name": "dropicon-simple",
+  "repo": "notablemind/dropicon-simple",
+  "description": "A simple theme for the dropicon component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "dropicon-simple.css"
+  ]
+}
