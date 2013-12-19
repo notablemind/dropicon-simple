@@ -1,38 +1,43 @@
 
-.simple-theme {
-  &.dropicon {
-    display: inline-block;
-    width: 200px;
+.simple-theme.dropicon {
+  width: 200px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+  .list li > *,
+  .head > * {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .head::after {
+    content: '\25BE';
+    position: absolute;
+    color: #555;
+    right: 13px;
+    top: 5px;
+  }
+
+  &.open .head::after {
+    content: '\25B4';
+    top: 3px;
+  }
+
+  .list {
+    left: -1px;
+    background-color: white;
     border: 1px solid #ccc;
-    box-sizing: border-box;
-    position: relative;
+    border-top: none;
+    width: 100%;
 
-    ul, li {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .item.selected > * {
+      background-color: #ddf;
     }
-    .list {
-      display: none;
-      position: absolute;
-      left: -1px;
-      background-color: white;
-      border: 1px solid #ccc;
-      border-top: none;
-      width: 100%;
 
-      li > * {
-        padding: 5px 10px;
-        cursor: pointer;
+    .item > * {
 
-        &:hover {
-          background-color: #eef;
-        }
-      }
-    }
-    &.open {
-      .list {
-        display: block;
+      &:hover {
+        background-color: #eef;
       }
     }
   }
