@@ -3,6 +3,9 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+.simple-theme.dropicon:focus {
+  outline: none;
+}
 .simple-theme.dropicon .list li > *,
 .simple-theme.dropicon .head > * {
   padding: 5px 10px;
