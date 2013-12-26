@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 .simple-theme.dropicon:focus {
+  outline: 1px solid blue;
+}
+.simple-theme.dropicon.open:focus {
   outline: none;
 }
 .simple-theme.dropicon .list li > *,
@@ -31,6 +34,9 @@
 }
 .simple-theme.dropicon .list .item.selected > * {
   background-color: #ddf;
+}
+.simple-theme.dropicon .list .item.focused {
+  outline: 1px solid blue;
 }
 .simple-theme.dropicon .list .item > *:hover {
   background-color: #eef;

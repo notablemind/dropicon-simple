@@ -5,6 +5,10 @@
   box-sizing: border-box;
 
   &:focus {
+    outline: 1px solid blue;;
+  }
+
+  &.open:focus {
     outline: none;
   }
 
@@ -36,6 +40,10 @@
 
     .item.selected > * {
       background-color: #ddf;
+    }
+
+    .item.focused {
+      outline: 1px solid blue;
     }
 
     .item > * {
